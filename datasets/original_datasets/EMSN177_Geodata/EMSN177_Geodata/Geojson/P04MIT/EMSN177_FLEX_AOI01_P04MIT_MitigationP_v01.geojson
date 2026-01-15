@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "EMSN177_FLEX_AOI01_P04MIT_MitigationP_v01",
+"features": [
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.5845497, 32.7799769 ] } },
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.5828553, 32.6628239 ] } },
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.6149166, 32.7181442 ] } },
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.6513344, 32.7602121 ] } },
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.6494913, 32.7583571 ] } },
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.6283229, 32.7450272 ] } },
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.6414395, 32.7624866 ] } },
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.643063, 32.76415 ] } },
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.6489605, 32.7665531 ] } },
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.650456, 32.7668849 ] } },
+{ "type": "Feature", "properties": { "Type": "New culvert", "UC_100": "Yes", "Comment": "Dimensions estimated based on modelled flow discharge of 100y" }, "geometry": { "type": "Point", "coordinates": [ 22.636311, 32.7565671 ] } }
+]
+}

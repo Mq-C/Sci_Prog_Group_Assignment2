@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd">
+  <gmd:fileIdentifier>
+    <gco:CharacterString>EMSN177_FLEX_AOI01_P05MODFLMIT02_maxWaterDepth_v01.xml</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language>
+    <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng" />
+  </gmd:language>
+  <gmd:characterSet>
+    <gmd:MD_CharacterSetCode codeListValue="utf8" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode">UTF-8</gmd:MD_CharacterSetCode>
+  </gmd:characterSet>
+  <gmd:hierarchyLevel>
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </gmd:hierarchyLevel>
+  <gmd:contact>
+    <gmd:CI_ResponsibleParty>
+      <gmd:organisationName>
+        <gco:CharacterString>IABG mbH</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:address>
+            <gmd:CI_Address>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>EMS-FLEX-IABG@iabg.de</gco:CharacterString>
+              </gmd:electronicMailAddress>
+            </gmd:CI_Address>
+          </gmd:address>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+      </gmd:role>
+    </gmd:CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp>
+    <gco:DateTime>2023-11-20T08:26:00Z</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName>
+    <gco:CharacterString>ISO19115</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:metadataStandardVersion>
+    <gco:CharacterString>2003/Cor.1:2006</gco:CharacterString>
+  </gmd:metadataStandardVersion>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>http://www.opengis.net/def/crs/EPSG/0/32634</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>Gregorian calendar</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification>
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>EMSN177: Flood risk and mitigation strategies in Derna (Libya)</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2023-11-20</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">Creation</gmd:CI_DateTypeCode>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:identifier>
+            <gmd:MD_Identifier>
+              <gmd:code>
+                <gco:CharacterString>EMSN177_FLEX_AOI01_P05MODFLMIT02_maxWaterDepth_v01</gco:CharacterString>
+              </gmd:code>
+            </gmd:MD_Identifier>
+          </gmd:identifier>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract>
+        <gco:CharacterString>On 10 September 2023, storm Daniel reached its peak in north-eastern Libya and caused damages and major destruction. One of the worst affected cities was Derna, at the time of event home to 90,000 people. As aftermath of the heavy rainfall the two ageing dams located in the Wadi Derna valley collapsed not being able to resist the huge volume of water. This led to a catastrophic event in which large parts of the city were destroyed and thousands of people lost their lives. One of the consequences of this event is that the city of Derna is finding itself once more exposed to floods, without mitigation systems installed protecting the inhabitants and the town. To better understand the flood risk of the area, analyses based on different scenarios are needed to retrieve insights on the possible impact of future events. The scope of the service request of EMSN177 is to support the EU environmental experts deployed within the UNDAC Team in Derna by providing them with analyses of the flood hazard and the exposure assessment of people and infrastructures based on three scenarios and mitigation measures. The impacts of the following scenarios were elaborated: floods with a (1) low probability (return period ≥ 500 years or extreme event scenarios), (2) medium probability (return period ≥ 100 years) and (3) high probability (return period of five years).</gco:CharacterString>
+      </gmd:abstract>
+      <gmd:pointOfContact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:organisationName>
+            <gco:CharacterString>European Commission - Joint Research Center</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>jrc-ems-riskrecoverymapping@ec.europa.eu</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">publisher</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:pointOfContact>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Human health and safety</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>Hydrography</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>Natural risk zones</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2008-06-01</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">Publication</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:useConstraints>
+            <gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
+          </gmd:useConstraints>
+          <gmd:otherConstraints>
+            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/conditionsUnknown">conditions to access and use unknown</gmx:Anchor>
+          </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:accessConstraints>
+            <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+          </gmd:accessConstraints>
+          <gmd:otherConstraints>
+            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1a">(a) the confidentiality of the proceedings of public authorities, where such confidentiality is provided for by law</gmx:Anchor>
+          </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">Grid</gmd:MD_SpatialRepresentationTypeCode>
+      </gmd:spatialRepresentationType>
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:distance>
+            <gco:Distance uom="m">5</gco:Distance>
+          </gmd:distance>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng">English</gmd:LanguageCode>
+      </gmd:language>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>environment</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>health</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>society</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>22.5072566882323</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>22.6992275268334</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>32.6138356782557</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>32.8017274444074</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+          <gmd:temporalElement>
+            <gmd:EX_TemporalExtent>
+              <gmd:extent>
+                <gml:TimePeriod gml:id="IDcd3b1c4f-b5f7-439a-afc4-3317a4cd89be">
+                  <gml:beginPosition>2023-10-20</gml:beginPosition>
+                  <gml:endPosition indeterminatePosition="now" />
+                </gml:TimePeriod>
+              </gmd:extent>
+            </gmd:EX_TemporalExtent>
+          </gmd:temporalElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:contentInfo>
+    <gmd:MD_ImageDescription>
+      <gmd:attributeDescription>
+        <gco:RecordType>raster band information</gco:RecordType>
+      </gmd:attributeDescription>
+      <gmd:contentType>
+        <gmd:MD_CoverageContentTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="image">image</gmd:MD_CoverageContentTypeCode>
+      </gmd:contentType>
+      <gmd:dimension>
+        <gmd:MD_Band uuid="1">
+          <gmd:descriptor>
+            <gco:CharacterString>Depth</gco:CharacterString>
+          </gmd:descriptor>
+        </gmd:MD_Band>
+      </gmd:dimension>
+    </gmd:MD_ImageDescription>
+  </gmd:contentInfo>
+  <gmd:distributionInfo>
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>raster data</gco:CharacterString>
+          </gmd:name>
+          <gmd:version gco:nilReason="unknown" />
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://emergency.copernicus.eu/mapping/list-of-components/EMSN177</gmd:URL>
+              </gmd:linkage>
+              <gmd:name>
+                <gco:CharacterString>EMSN177: Flood risk and mitigation strategies in Derna (Libya) (Online presentation)</gco:CharacterString>
+              </gmd:name>
+              <gmd:description>
+                <gco:CharacterString>official page of COPERNICUS for activation 'EMSN177: Flood risk and mitigation strategies in Derna (Libya)' with further informations and the possibility to download the results in different formats after the activation is closed</gco:CharacterString>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"></gmd:CI_OnLineFunctionCode>
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency>
+          <gmd:result>
+            <gmd:DQ_ConformanceResult>
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2010-12-08</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">Publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>This data set is conformant with the INSPIRE Implementing Rules for the interoperability of spatial data sets and services</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:pass>
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>The layer shows the extent and depth of a flood with a medium probability (with a return period of 100 years) incorporating the effects of the proposed mitigation measures. This layer has been generated based on a 2D modelling approach using an adapted 5m DSM and LULC data. The geometric accuracy depends on the accuracy of the input data. For further details, refer to the Technical Report.</gco:CharacterString>
+          </gmd:statement>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</gmd:MD_Metadata>

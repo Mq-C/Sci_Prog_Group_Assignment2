@@ -1,0 +1,1 @@
+Please add the SVG  to the CEMS-RM repository https://emergency.copernicus.eu/images/svg/
