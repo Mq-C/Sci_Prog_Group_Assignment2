@@ -3,6 +3,7 @@ import rasterio
 import numpy as np
 from shapely.geometry import Polygon, LineString,Point
 import pytest
+from functions.prepare_layers import prepare_layers
 
 
 
@@ -26,10 +27,15 @@ def test_prepare_layers(flood_extent,buildings,pop_raster_path,roads,target_crs)
         assert invalid_count ==0, f'{name} has {invalid_count} invalid geometry'
     print('All geometries are valid')
 
-    #check if a layer is empty
-    for name,gdf in layers.item():
-        assert len(gdf)>0, f'{name} layer is empty'
-    print('The layer is not empty')
+    with rasterio.open(pop_raster_path) as src:
+        assert src.crs is not None,'Population raster has no crs'
+        assert src.crs.to_epsg() == target_crs, f'Popilation raster is not in RPSF: {target_crs}'
+
+
+    #check if a layer is empty and geometry validity
+    for name,gdf in layers.items():
+        assert gdf.is_valid.all(),f'{name} has invalid geometries'
+        assert not gdf.empty,f'{name} layer is empty'
 
     #for raster layers: check if layer exist and not empty:
     with rasterio.open(pop_raster_path) as src:
@@ -39,7 +45,8 @@ def test_prepare_layers(flood_extent,buildings,pop_raster_path,roads,target_crs)
 
     #check if building csv conversion worked and points are within Derna boundary
     #Derna boundary is approximately 20°E to 25°E
-    assert buildings.total_bound[0]>20 and buildings.total_bound[2] <25, 'Building points are outside Derna'
+    buildings_4326 = buildings.to_crs(epsg=4326)
+    assert buildings_4326.total_bounds[0]>20 and buildings_4326.total_bounds[2] <25, 'Building points are outside Derna'
     print('Building csv conversion to poitns worked')
 
 def test_vector_clipping(original_buildings,clipped_buildings,original_roads,clipped_roads):
@@ -59,9 +66,9 @@ def test_raster_clipping(original_pop_array,clipped_pop_array,flood_extent_array
         'Clipped population must match flood extent'
     print('Clipped population matched flood extent')
 
-    assert clipped_pop_array.size < original_pop_array.size,\
-        'Population rastered was not clipped'
-    
+    dry_area_values = clipped_pop_array[flood_extent_array==0]
+    assert np.all(dry_area_values==0) or np.isnan(dry_area_values).all(),\
+        'Raster not properly masked'    
 
         
 
