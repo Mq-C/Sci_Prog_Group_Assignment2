@@ -10,6 +10,7 @@ flood_path = r'datasets\inputs\PHR_20230913_FloodExtent_Derna.shp'
 roads_path = r'datasets\inputs\Road.shp'
 water_depth_path = r'datasets\inputs\EMSN177_FLEX_AOI01_P01MODFL01_maxWaterDepth_v01.tif'
 pop_2020_path = r'datasets\inputs\lby_pop_2020_CN_100m_R2025A_v1.tif'
+pop_2024_path= r'datasets\inputs\lby_pop_2024_CN_100m_R2025A_v1.tif'
 output_folder = 'outputs'
 os.makedirs(output_folder, exist_ok=True)
 
@@ -57,10 +58,16 @@ def main():
     with rasterio.open(water_depth_output,'w',**water_depth_meta) as dst:
         dst.write(water_depth_array,1)
 
-    pop_array, pop_meta = clip_raster_tensor(pop_2020_path,flood)
-    pop_output = os.path.join(output_folder,'clipped_population_2020.tif')
-    with rasterio.open(pop_output,'w',**pop_meta) as dst:
-        dst.write(pop_array,1)
+    pop_array_2020, pop_meta_2020 = clip_raster_tensor(pop_2020_path,flood)
+    pop_array_2024, pop_meta_2024 = clip_raster_tensor(pop_2024_path,flood)
+
+    pop_output_2024 = os.path.join(output_folder,'clipped_population_2024.tif')
+    with rasterio.open(pop_output_2024,'w',**pop_meta_2024) as dst:
+        dst.write(pop_array_2024,1)
+
+    pop_output_2020 = os.path.join(output_folder,'clipped_population_2020.tif')
+    with rasterio.open(pop_output_2020,'w',**pop_meta_2020) as dst:
+        dst.write(pop_array_2020,1)
 
     impacted_buildings = sample_depth_at_buildings(impacted_buildings_np,water_depth_output)
 
