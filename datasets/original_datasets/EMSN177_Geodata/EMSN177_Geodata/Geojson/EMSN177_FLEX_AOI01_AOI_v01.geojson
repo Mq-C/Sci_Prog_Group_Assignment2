@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "EMSN177_FLEX_AOI01_AOI_v01",
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "emsn_id": "EMSN177", "fwc_type": "FLEX", "Id": "01", "name": "Derna", "glide_no": "Not applicable", "prod_type": "P2, P3, P4", "country": "Libya", "Shape_Length": 66416.102434756744, "Shape_Area": 273684780.66458869 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 22.560591596970479, 32.811629753570635 ], [ 22.710551179047062, 32.766096529219695 ], [ 22.660923675594841, 32.611968465619377 ], [ 22.50192817044875, 32.6564345320622 ], [ 22.560591596970479, 32.811629753570635 ] ] ] ] } }
+]
+}
