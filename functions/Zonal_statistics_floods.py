@@ -260,7 +260,7 @@ def Population_statistics_cube(xarray, flood):
 def plot_population(xarray):
     n = xarray.sizes['time']
     rows = math.ceil(n)
-    cols = 3
+    cols = 2
     years_analysis = []
     
     # Define the figure

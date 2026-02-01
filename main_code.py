@@ -22,11 +22,11 @@ os.makedirs(output_folder, exist_ok=True)
 
 # Files for my population statistics
 
-raster_file_2020 = 'C:\MGEO\Y1\Q2\Scientific Prog Geospatial Sciences\Programming exercises\Week_10\Assignment_2_DMR\Sci_Prog_Group_Assignment2\outputs\clipped_population_2020.tif'
-raster_file_2021 = 'C:\MGEO\Y1\Q2\Scientific Prog Geospatial Sciences\Programming exercises\Week_10\Assignment_2_DMR\Sci_Prog_Group_Assignment2\outputs\clipped_population_2021.tif'
-raster_file_2022 = 'C:\MGEO\Y1\Q2\Scientific Prog Geospatial Sciences\Programming exercises\Week_10\Assignment_2_DMR\Sci_Prog_Group_Assignment2\outputs\clipped_population_2022.tif'
-raster_file_2023 = 'C:\MGEO\Y1\Q2\Scientific Prog Geospatial Sciences\Programming exercises\Week_10\Assignment_2_DMR\Sci_Prog_Group_Assignment2\outputs\clipped_population_2023.tif'
-raster_file_2024 = 'C:\MGEO\Y1\Q2\Scientific Prog Geospatial Sciences\Programming exercises\Week_10\Assignment_2_DMR\Sci_Prog_Group_Assignment2\outputs\clipped_population_2024.tif'
+raster_file_2020 = r'outputs\clipped_population_2020.tif'
+raster_file_2021 = r'outputs\clipped_population_2021.tif'
+raster_file_2022 = r'outputs\clipped_population_2022.tif'
+raster_file_2023 = r'outputs\clipped_population_2023.tif'
+raster_file_2024 = r'outputs\clipped_population_2024.tif'
 
 # For the datacubesdictinary of paths
 files = {raster_file_2020: 2020,
@@ -128,13 +128,13 @@ def main():
     
     # Create the data for the statistics
     # Road length inside the polygon
-    Road_affect = create_gdf(r'C:\MGEO\Y1\Q2\Scientific Prog Geospatial Sciences\Programming exercises\Week_10\Assignment_2_DMR\Sci_Prog_Group_Assignment2\outputs\impacted_roads.gpkg', layer='impacted_roads')
+    Road_affect = create_gdf(r'outputs\impacted_roads.gpkg', layer='impacted_roads')
 
     # Buildings Derna
-    Buildings_Derna = create_gdf(r"C:\MGEO\Y1\Q2\Scientific Prog Geospatial Sciences\Programming exercises\Week_10\Assignment_2_DMR\Sci_Prog_Group_Assignment2\outputs\impacted_buildings_with_water_depth.gpkg", layer= 'impacted_buildings_with_water_depth')
+    Buildings_Derna = create_gdf(r'outputs\impacted_buildings_with_water_depth.gpkg', layer= 'impacted_buildings_with_water_depth')
 
     # Flood extension 
-    flood_ext = create_gdf(r'C:\MGEO\Y1\Q2\Scientific Prog Geospatial Sciences\Programming exercises\Week_10\Assignment_2_DMR\Sci_Prog_Group_Assignment2\datasets\inputs\PHR_20230913_FloodExtent_Derna.shp')
+    flood_ext = create_gdf(r'datasets\inputs\PHR_20230913_FloodExtent_Derna.shp')
 
     # Flood extension 
     flood_ext = check_crs_3177(flood_ext)
