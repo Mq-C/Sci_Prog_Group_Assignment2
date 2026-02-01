@@ -9,7 +9,6 @@ from pyproj import CRS
 import matplotlib.pyplot as plt
 import folium
 import rasterio
-from rasterio.mask import mask
 from affine import Affine
 from tabulate import tabulate
 import xarray as xr
