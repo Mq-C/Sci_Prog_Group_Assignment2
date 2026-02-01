@@ -1,10 +1,13 @@
+# Import main libraries and functions
 import matplotlib.pyplot as plt
 import os
 import rasterio
 from functions.prepare_layers import prepare_layers
 from functions.vector_clipping import clip_vectors_numpy, clip_vectors_tensor
 from functions.raster_clipping import clip_raster_numpy,sample_depth_at_buildings,clip_raster_tensor
+from functions.Zonal_statistics_floods import create_gdf, check_crs_3177, road_statistics, Buildings_statistics, Population_statistics, create_population_cube, Population_statistics_cube, plot_population, plot_series_population
 
+# Set the main paths
 csv_path = r'datasets\inputs\open_buildings_v3_polygons_your_own_wkt_polygon_derna.csv.gz'
 flood_path = r'datasets\inputs\PHR_20230913_FloodExtent_Derna.shp'
 roads_path = r'datasets\inputs\Road.shp'
@@ -16,6 +19,21 @@ pop_2023_path = r'datasets\inputs\lby_pop_2023_CN_100m_R2025A_v1.tif'
 pop_2024_path= r'datasets\inputs\lby_pop_2024_CN_100m_R2025A_v1.tif'
 output_folder = 'outputs'
 os.makedirs(output_folder, exist_ok=True)
+
+# Files for my population statistics
+
+raster_file_2020 = r'outputs\clipped_population_2020.tif'
+raster_file_2021 = r'outputs\clipped_population_2021.tif'
+raster_file_2022 = r'outputs\clipped_population_2022.tif'
+raster_file_2023 = r'outputs\clipped_population_2023.tif'
+raster_file_2024 = r'outputs\clipped_population_2024.tif'
+
+# For the datacubesdictinary of paths
+files = {raster_file_2020: 2020,
+         raster_file_2021: 2021,
+         raster_file_2022: 2022,
+         raster_file_2023: 2023,
+         raster_file_2024: 2024,}
 
 clipped_buildings_path = os.path.join(output_folder, 'clipped_buildings.gpkg')
 clipped_roads_path = os.path.join(output_folder, 'clipped_roads.gpkg')
@@ -107,13 +125,59 @@ def main():
     plot_exposure(flood,roads,impacted_roads_t,
                   'Derna Flood: Roads Exposure (Tensor)',
                   'roads_exposure.png','red')
+    
+    # Create the data for the statistics
+    # Road length inside the polygon
+    Road_affect = create_gdf(r'outputs\impacted_roads.gpkg', layer='impacted_roads')
 
+    # Buildings Derna
+    Buildings_Derna = create_gdf(r'outputs\impacted_buildings_with_water_depth.gpkg', layer= 'impacted_buildings_with_water_depth')
 
+    # Flood extension 
+    flood_ext = create_gdf(r'datasets\inputs\PHR_20230913_FloodExtent_Derna.shp')
 
+    # Flood extension 
+    flood_ext = check_crs_3177(flood_ext)
 
+    # Road statistics
+    road_statistics(Road_affect)
 
+    # Buildings statistics
+    Buildings_statistics(Buildings_Derna, flood_ext)
+    
+    # Population statistics
 
+    # Population 2020
+    Population_statistics(raster_file_2020, 2020, flood_ext)
 
+    # Population 2021
+    Population_statistics(raster_file_2021, 2021, flood_ext)
+
+    # Population 2022
+    Population_statistics(raster_file_2022, 2022, flood_ext)
+
+    # Population 2023
+    Population_statistics(raster_file_2023, 2023, flood_ext)
+
+    # Population 2024
+    Population_statistics(raster_file_2024, 2024, flood_ext)
+
+    # Creating a datacube
+
+    # Population 2020 - 2024
+
+    population_2020_2024 = create_population_cube(files)
+    
+    # Statistics population 2020 - 2024
+
+    Population_statistics_cube(population_2020_2024, flood_ext)
+    
+    # Plotting view Population 2020 - 2024
+
+    plot_population(population_2020_2024)
+    
+    # Plotting time series Population 2020 - 2024
+    plot_series_population(population_2020_2024, flood_ext)
 
 if __name__ == "__main__":
     main()
